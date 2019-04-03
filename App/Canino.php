@@ -2,14 +2,31 @@
 
 namespace App;
 
-abstract class Canino extends Mamifero{
-    protected $camada = [];
-    protected $dueño = '';
+abstract class Canino extends Mamifero
+{
+    protected $camada;
 
+    protected $especie;
 
+    protected $altura;
 
-    public function Canino($camada,$dueño){
-        array_push($this->camada,$camada,$this->dueño,$dueño);
+    protected $peso;
+
+    protected $color;
+
+    protected $largo;
+
+    protected $ubicacion;
+
+    protected $clase;
+
+    public function Canino ($camada,$especie,$altura,$peso,$largo,$color)
+    {
+        $this->camada = $camada;
+        $this->especie = $especie;
+        $this->altura = $altura;
+        $this->largo = $largo;
+        $this->peso = $peso;
+        $this->color = $color;
     }
-
 }

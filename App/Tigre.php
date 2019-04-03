@@ -4,40 +4,56 @@ namespace App;
 
 class Tigre extends Felino
 {
-    function __construct($camada){
-        $this->Canino($camada);
-    }
-    function comer()
-    {
-        echo 'Comer = cazan en grupo',' - ';
+    function __construct($altura,$peso,$largo,$color,$ubicacion){
+       $this->altura = $altura;
+       $this->peso = $peso;
+       $this->largo = $largo;
+       $this->color = $color;
+       $this->ubicacion = $ubicacion;
+       $this->clase = "Tigre";
     }
 
+    function clase(){
+        echo '<br>';
+        echo 'Clase = ',$this->clase;
+    }
+
+    function comer()
+    {
+        echo '<br>';
+        echo 'Comer = Cazan solos ','<br>';
+    }
     function dormir()
     {
-        echo 'Dormir = : duermen en los bosques, en cuevas, viven en grupos',' - ';
+        echo 'Dormir = :','<br>';
     }
 
     function correr()
     {
-        echo 'Correr =',' - ';
+        echo 'Correr =','<br>';
     }
     function rugir(){
-        echo 'Rugir = rugen aullando en luna llena',' - ';
+        echo 'Rugir = rugen aullando en luna llena','<br>';
     }
-    function camada(){
-        echo 'Camada = numero de integrantes en su camada: ',$this->camada[0],'<br>';
-    }
-
     function ubicacion(){
-        echo 'su peso : ',$this->camada[0],'<br>';
+        echo 'Ubicacion : ',$this->ubicacion,'<br>';
     }
     function color(){
-        echo 'su peso : ',$this->camada[0],'<br>';
+        echo 'Color : ',$this->color,'<br>';
     }
     function altura(){
-        echo 'su peso : ',$this->camada[0],'<br>';
+        echo 'Altura : ',$this->altura,' Metros','<br>';
+    }
+    function largo(){
+        echo 'Largo : ',$this->largo,' Cm','<br>';
     }
     function peso(){
-        echo 'su peso : ',$this->camada[0],'<br>';
+        echo 'Peso : ',$this->peso,' Kilos',  '<br>';
+    }
+    function especie(){
+        echo 'Especie : ','<br>';
+    }
+    function camada(){
+
     }
 }

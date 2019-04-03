@@ -4,44 +4,76 @@ namespace App;
 
 class Perro extends Canino
 {
-
-    function __construct($dueño,$especie){
-        $this->Canino(2,$dueño);
-    }
-    function comer()
+    function __construct ($dueño,$altura,$peso,$largo,$color,$ubicacion)
     {
-        echo 'Comer = el perro es alimentado por su dueño: ',$this->dueño,' - ';
+        $this->dueño = $dueño;
+        $this->altura = $altura;
+        $this->peso = $peso;
+        $this->largo = $largo;
+        $this->color = $color;
+        $this->ubicacion = $ubicacion;
+        $this->clase = "Perro";
     }
 
-    function dormir()
+    function clase ()
     {
-        echo 'Dormir = :',' - ';
+        echo '<br>';
+        echo 'Clase = ',$this->clase;
     }
 
-    function correr()
+    function comer ()
     {
-        echo 'Correr =',' - ';
-    }
-    function rugir(){
-        echo 'Rugir = rugen aullando en luna llena','<br>'.'<br>';
-    }
-    function camada(){
-
+        echo '<br>';
+        echo 'Comer = el perro es alimentado por su dueño = ',$this->dueño,'<br>';
     }
 
-    function ubicacion(){
-        echo 'su ubicacion : ','<br>';
+    function dormir ()
+    {
+        echo 'Dormir = : jardin o dentro de la casa','<br>';
     }
-    function color(){
-        echo 'su color : ','<br>';
+
+    function correr ()
+    {
+        echo 'Correr =','<br>';
     }
-    function altura(){
-        echo 'su altura : ','<br>';
+
+    function rugir ()
+    {
+        echo 'Rugir = Ladrar','<br>';
     }
-    function peso(){
-        echo 'su peso : ','<br>';
+
+    function ubicacion ()
+    {
+        echo 'Ubicacion : ',$this->ubicacion,'<br>';
     }
-    function especie(){
-        echo 'su especie : ','<br>';
+
+    function color ()
+    {
+        echo 'Color : ',$this->color,'<br>';
+    }
+
+    function altura ()
+    {
+        echo 'Altura : ',$this->altura,' Metros','<br>';
+    }
+
+    function largo ()
+    {
+        echo 'Largo : ',$this->largo,' Cm','<br>';
+    }
+
+    function peso ()
+    {
+        echo 'Peso : ',$this->peso,' Kilos','<br>';
+    }
+
+    function especie ()
+    {
+        echo 'Especie : ','<br>';
+    }
+
+    function camada ()
+    {
+
     }
 }
